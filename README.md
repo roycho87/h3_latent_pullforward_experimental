@@ -5,6 +5,7 @@
 > This is an experiment, not a finished tool. It was built by a video editor, not a programmer, with heavy AI assistance.
 > It has been tested on a handful of locked-off scenes and nothing else. Settings that work on one scene may do nothing,
 > or make things worse, on another. Expect to tune it. Expect bugs. Back up your workflow before wiring it in.
+>
 
 Keeps the **still background of a locked-off shot from drifting** when you chain MiniMax H3 continuation clips.
 
@@ -373,16 +374,6 @@ the `log` output before trusting it.
   after `hold` frames; it is not held to the old one.
 * Written for the MiniMax H3 latent layout (24 channels, 16x spatial compression, blocks of 5 latent frames).
 * Prototype: tested on one scene. Expect to tune the Motion Mask for yours.
-
-## Prior art
-
-Holding frames across H3 clips by writing them into the latent and masking them off was done first, and more
-thoroughly, by [seitanism/ComfyUI-H3-Motion-Context-MultiRef](https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef)
-in August 2026. That pack snaps the kept run to block boundaries and protects the audio as well. This pack was worked
-out independently and found out afterwards, which is worth saying plainly.
-
-What Pull-Forward does is a different job: it holds the **still parts of the picture** to a reference across a whole
-chain, using a motion mask, rather than holding a fixed run of frames at the start of a clip.
 
 ## Credits
 
