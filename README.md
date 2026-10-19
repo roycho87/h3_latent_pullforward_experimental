@@ -5,10 +5,6 @@
 > This is an experiment, not a finished tool. It was built by a video editor, not a programmer, with heavy AI assistance.
 > It has been tested on a handful of locked-off scenes and nothing else. Settings that work on one scene may do nothing,
 > or make things worse, on another. Expect to tune it. Expect bugs. Back up your workflow before wiring it in.
->
-> If you want something mature for holding frames across H3 clips, look at
-> [seitanism/ComfyUI-H3-Motion-Context-MultiRef](https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef),
-> which has been doing block-aligned latent masking since August 2026.
 
 Keeps the **still background of a locked-off shot from drifting** when you chain MiniMax H3 continuation clips.
 
